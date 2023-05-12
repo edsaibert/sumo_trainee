@@ -7,6 +7,8 @@ void infra_setup() {
 }
 
 int sen_infra() {
-    return analogRead(INFRA_PIN);
+    // Serial.write(analogRead(INFRA_PIN));
+    // return analogRead(INFRA_PIN);
+    return 2;
     // tratar resultado
 }
