@@ -3,7 +3,7 @@
 #define SEN_DIST_ESQ A0
 #define SEN_DIST_DIR A1
 
-#define valor_detec 1
+#define valor_detec 320
 
 void sen_dist_setup() {
   pinMode(SEN_DIST_ESQ, INPUT);

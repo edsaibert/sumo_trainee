@@ -12,9 +12,9 @@ void setup() {
 }
 
 void loop() {
-  if (sen_infra() == 1) {
-    digitalWrite(STBY, HIGH);
-  } else if (sen_infra() == 2) {
+  // if (sen_infra() == 1) {
+  digitalWrite(STBY, HIGH);
+  // } else if (sen_infra() == 2) {
     // ler sensores de distância
     if (inimigo() == true) {
       rotina_ataque();
@@ -31,9 +31,9 @@ void loop() {
         }
         frente();
       }
-    }
-  } else if (sen_infra() == 3) {
-    parar();
-    digitalWrite(STBY, LOW);
+  //   }
+  // } else if (sen_infra() == 3) {
+  //   parar();
+  //   digitalWrite(STBY, LOW);
   }
 }

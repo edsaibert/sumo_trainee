@@ -65,7 +65,7 @@ void tras() {
   digitalWrite(MOTOR_DIR_2, HIGH);
   analogWrite(MOTOR_DIR_PWN, 255);
 
-  delay(2000);
+  delay(2500);
 
   Serial.write("\ntras");
 }
@@ -78,6 +78,8 @@ void parar() {
   digitalWrite(MOTOR_DIR_1, HIGH);
   digitalWrite(MOTOR_DIR_2, HIGH);
   analogWrite(MOTOR_DIR_PWN, 0);
+
+  delay(2000);
 }
 
 void esq_frente_dir_tras() {
@@ -88,7 +90,7 @@ void esq_frente_dir_tras() {
   digitalWrite(MOTOR_DIR_1, LOW);
   digitalWrite(MOTOR_DIR_2, HIGH);
   analogWrite(MOTOR_DIR_PWN, 255);
-  delay(2000);
+  delay(2500);
 
   Serial.write("\nesq_frente_dir_tras");
 }
@@ -101,7 +103,7 @@ void esq_tras_dir_frente() {
   digitalWrite(MOTOR_DIR_1, HIGH);
   digitalWrite(MOTOR_DIR_2, LOW);
   analogWrite(MOTOR_DIR_PWN, 255);
-  delay(2000);
+  delay(2500);
 
   Serial.write("\nesq_tras_dir_frente");
 }
